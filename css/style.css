@@ -1,0 +1,203 @@
+html {
+  font-size: 93.75%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-positon: center center;
+  background-color: #000000;
+  background-size: cover;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+  min-width: 1200px;
+}
+
+.header::before {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.top_panel__container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.logo {
+  width: 15%;
+  padding-top: 2.33%;
+  display: block;
+  z-index: 3;
+}
+
+.menu {
+  margin-top: 2.8rem;
+}
+
+.menu_link:hover {
+  text-decoration: underline;
+}
+
+.menu__button {
+  display: none;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  width: 467px;
+}
+
+li {
+  list-style-type: none;
+  z-index: 3;
+}
+
+.menu_link {
+  color: #ffffff;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: normal;
+}
+.header__slogan {
+  width: 58.33%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 9.33rem;
+  padding-top: 6.66rem;
+}
+
+h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 3rem;
+  line-height: 1.7;
+  text-align: center;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  z-index: 4;
+}
+
+@media (max-width: 1201px) {
+  .menu_list {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+
+  .header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+    width: 100%;
+    min-width: 641px;
+    max-width: 1199px;
+    }
+  
+.header::before {
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+.top_panel__container {
+  width: 91%;
+  }
+  
+.logo {
+  width: 20.08%;
+  margin-top: 4.13rem;
+}
+
+  .header__slogan {
+  width: 78.48%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.11rem;
+  margin-bottom: 11rem;
+  }
+
+  h1 {
+    font-size: 2.77rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+  html {
+    font-size: 87.5%;
+  }
+
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+    width: 100%;
+    
+    min-width: 320px;
+    max-width: 640px;
+    }
+    
+
+.header::before {
+ background-color: #000000;
+    opacity: 0.6;
+  }
+  
+
+.logo {
+  width: 74.79%;
+  margin-top: 16rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+}
+
+  .header__slogan {
+  width: 77.01%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 400px;
+ 
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.6;
+  }
+}
+
+
