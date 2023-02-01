@@ -1,5 +1,5 @@
 html {
-  font-size: 93.75%;
+  font-size: 82.25%;
 }
 
 * {
@@ -34,6 +34,7 @@ a {
   margin-bottom: 64px;
   text-transform: uppercase;
   min-width: 1200px;
+  position: relative;
 }
 
 .header::before {
@@ -47,6 +48,10 @@ a {
   bottom: 0;
 }
 
+.top_panel {
+  max-width: 1200px;
+}
+
 .top_panel__container {
   display: flex;
   justify-content: space-between;
@@ -58,10 +63,11 @@ a {
 }
 
 .logo {
-  width: 15%;
+  width: 20%;
   padding-top: 2.33%;
   display: block;
   z-index: 3;
+
 }
 
 .menu {
@@ -72,7 +78,7 @@ a {
   text-decoration: underline;
 }
 
-.menu__button {
+.menu__icon {
   display: none;
 }
 
@@ -92,13 +98,14 @@ li {
   font-family: OpenSans;
   font-weight: 400;
   font-style: normal;
+
 }
 .header__slogan {
   width: 58.33%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 9.33rem;
-  padding-top: 6.66rem;
+  padding-bottom: 11.53rem;
+  padding-top: 7.46rem;
 }
 
 h1 {
@@ -113,9 +120,17 @@ h1 {
   z-index: 4;
 }
 
-@media (max-width: 1201px) {
+@media (max-width: 1199px) {
   .menu_list {
     display: none;
+  }
+
+  .menu__icon {
+    background-image: url(" ../svg/menu__icon.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20%;
+    color: #ffffff;
   }
 }
 
@@ -126,6 +141,12 @@ h1 {
     width: 100%;
     min-width: 641px;
     max-width: 1199px;
+    background-color: #000000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
     }
   
 .header::before {
@@ -138,12 +159,13 @@ h1 {
   }
   
 .logo {
-  width: 20.08%;
+  width: 22.56%;
   margin-top: 4.13rem;
 }
 
   .header__slogan {
-  width: 78.48%;
+  width: 90%;
+  min-width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.11rem;
@@ -151,7 +173,13 @@ h1 {
   }
 
   h1 {
-    font-size: 2.77rem;
+    font-size: 3rem;
+     min-width: 600px;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     white-space: nowrap;
+
   }
 }
 
@@ -163,8 +191,12 @@ h1 {
 
   .header {
     background-image: url(../images/banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
     width: 100%;
-    
     min-width: 320px;
     max-width: 640px;
     }
@@ -177,20 +209,20 @@ h1 {
   
 
 .logo {
-  width: 74.79%;
-  margin-top: 16rem;
+  width: 95%;
+  margin-top: 17rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
-
+  margin-bottom: 0px;
 }
 
   .header__slogan {
   width: 77.01%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 400px;
+  margin-top: -60px;
+  margin-bottom: 15rem;
+  padding-top: o;
  
   }
 
@@ -199,5 +231,232 @@ h1 {
     line-height: 1.6;
   }
 }
+
+/* блок в тренде */
+
+
+.aside_name {
+  font-size: 1.54rem;
+  text-transform: uppercase;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  margin-top: 63px;
+  position: relative;
+  margin-bottom: 3.23rem;
+}
+
+
+.aside_name::after {
+  content: " ";
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  background: #e1d9bd;
+  left: calc(50% - 33px);
+  top: 35px;
+}
+
+
+.container_asid {
+  display: flex;
+}
+
+.trend_image::before {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.trend_image {
+  min-height: 320px;
+  max-width: 25%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 4.92rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+.trend_image:nth-child(n + 2) {
+  margin-left: 0.3%;
+}
+
+.trend_image:nth-child(1) {
+  background-image: url(../images/trend1.jpg);
+}
+
+.trend_image:nth-child(2) {
+  background-image: url(../images/trend2.jpg);
+}
+
+.trend_image:nth-child(3) {
+  background-image: url(../images/trend3.jpg);
+}
+
+.trend_image:nth-child(4) {
+  background-image: url(../images/trend4.jpg);
+}
+
+
+
+.trend_content {
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: 2px solid #b59f5b;
+  margin-top: 45px;
+  width: 90%;
+  padding-bottom: 2.61rem;
+  padding-left: 2rem;
+  padding-right: 1.4rem;
+  box-sizing: border-box;
+  padding-top: 2.61rem;
+  z-index: 5;
+}
+
+
+.trend_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trend_tag_link {
+  color: #b59f5b;
+  font-size: 1.08rem;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  padding-right: 19px;
+  z-index: 3;
+}
+
+.trend_name_link {
+  color: #FFFFFF;
+  font-size: 1.52rem;
+  font-family: OpenSans;
+  font-weight: 600;
+  font-style: normal;
+  z-index: 2;
+  
+}
+
+.trend_name {
+  margin-top: 12px;
+  z-index: 4;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .aside_name {
+    font-size: 1.38rem;
+    margin-top: -100px;
+  }
+  .container_asid {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .trend_image {
+    width: 49.7%;
+    min-height: 246px;
+    max-width: 1199px;
+    margin-bottom: 0.3%;
+  }
+
+
+  .trend_image:nth-child(3) {
+     margin-left: 0;
+  }
+
+    .trend_content {
+    padding-top: 2.77rem;
+    padding-bottom: 2.77rem;
+    padding-left: 2.31rem;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+
+  .trend_name {
+    width: 80%;
+    margin-top: 17px;
+  }
+
+  .trend_name_link {
+    font-size: 1.31rem;
+  }
+
+  .trend_tag_link {
+    font-size: 1.08rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .aside_name {
+    font-size: 1.15rem;
+    margin-top: -160px;
+  }
+  .container_asid {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 230px;
+  }
+
+  .trend_image  {
+    width: 100%;
+    max-width: 640px;
+    height: 230px;
+    margin-bottom: 0;
+  }
+
+  .trend_image:nth-child(n + 2) {
+    margin-left: 0;
+    margin-top: 3px;
+  }
+
+  .trend_content {
+    max-width: 90%;
+    padding-top: 2.35rem;
+    padding-left: 1.57rem;
+    padding-bottom: 2.35rem;
+    margin-bottom: 1.14rem;
+    margin-top: 0;
+
+  }
+
+  .trend_name {
+    margin-top: 1.07rem;
+  }
+  .trend_name_link {
+    font-size: 1.15rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
