@@ -1079,15 +1079,222 @@ h3 {
   .aside_topic_item {
     width: 100%;
   }
+}
 
+/* раздел магазин*/
+
+.shop {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 64px;
+}
+
+.shop_name {
+  font-size: 1.54rem;
+  text-transform: uppercase;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.shop_name::after {
+   content: " ";
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  background: #e1d9bd;
+  left: 47%;
+  top: 35px;
+}
+
+.shop_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 29%;
+
+}
+
+.card_picture {
+  background-color: #e5e5e5;
+  height: 204px;
+  width: 300px;
+
+}
+
+.card_img {
+  max-width: 100%;
 }
 
 
 
+.card_info {
+  border: 3px solid #b59f5b;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 265px;
+  margin-top: -32px;
 
+}
 
+.card_info_container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+.card_name {
+  font-size: 1.53rem;
+  text-transform: uppercase;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 55px;
+  margin-bottom: 2px;
+ }
 
+ .card_name_link {
+  color: #000000;
+ }
+
+.card_text {
+  font-size: 1.15rem;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 25px;
+}
+
+.card_text_link {
+  border-bottom: 1px solid #b59f5b;
+  color: #b59f5b;
+}
+
+.color {
+  color: #b59f5b;
+}
+
+.price_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+}
+
+.old_price {
+  font-size: 1.08rem;
+  text-transform: uppercase;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: line-through;
+  line-height: 1;
+}
+
+.new_price {
+    font-size: 1.53rem;
+  text-transform: uppercase;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+}
+
+.card_button {
+  font-size: 1.08rem;
+  text-transform: uppercase;
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #b59f5b;
+  color: #f0ecde;
+  border: none;
+  width: 140px;
+  height: 48px;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  
+  .shop {
+    max-width: 1199px;
+    min-width: 641px;
+  }
+
+  .shop_container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    margin-bottom: 26px;
+  }
+
+  .card_info {
+    max-height:259px ;
+    margin-top: -20px;
+  }
+
+  .card_picture {
+    max-width: 291px;
+    max-height: 226px;
+  }
+
+  .card_name {
+    font-size: 1.31rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+.shop {
+  max-width: 640px;
+ }
+
+.shop_container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+.card {
+  width: 100%;
+  margin-bottom: 22px;
+ }
+
+  .card_info {
+    max-height:239px;
+ margin-top: 45px;
+  }
+
+.card_picture {
+    max-width: 284px;
+    max-height: 284px;
+  }
+
+.card_name {
+  font-size: 1.21rem;
+}
+}
 
 
 
