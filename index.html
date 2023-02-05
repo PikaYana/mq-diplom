@@ -15,9 +15,9 @@
             <div class="top_panel__container">
                 <a href="#0" class="logo"> <img src="svg/noemi-logo.svg" alt="логотип"> </a>
                 <nav class="menu">
-                    <div class="menu__icon">
-                       <span class="menu__button-label">открыть меню</span>
-                    </div>
+                    <button class="menu_icon">
+                       <span class="menu_button_label">открыть меню</span>
+                    </button>
                     <ul class="menu_list">
                         <li> <a href="#0" class="menu_link">Главная</a></li>
                         <li> <a href="#0" class="menu_link">Посты</a></li>
@@ -435,6 +435,72 @@
             </article>
         </div>   
     </aside>
+
+    <footer class="footer">
+        <address class="container_icons">
+            <ul class="social_icons">
+                <li class="social_icon_item"> <a class="social_icon_link social_icon_link_dribbble" href="#0">
+                    <span class="social_icon_text">dribbble </span> </a>
+                </li>
+              
+                <li class="social_icon_item"> <a class="social_icon_link social_icon_link_pinterest" href="#0">
+                    <span class="social_icon_text">pinterest</span></a>
+                </li>
+              
+                <li class="social_icon_item"><a class="social_icon_link social_icon_link_tumbler" href="#0">
+                    <span class="social_icon_text">tumbler</span> </a>
+                </li>
+            </ul>
+        </address>
+        <a class="footer_text" href="#0">Copyright © 2009–2019 City Blog LLC.</a>     
+    </footer>
+
+    <div class="popup">
+        <div class="popup_container"> 
+            <div class="popup_header">
+                <header class="popup_header_name"> ваш фидбек</header>
+            </div>
+            <div class="feedback">
+                <form class="survey_form">
+                    <div class="survey_group">
+                        <label class="survey_group_label">
+                            <span class="survey_name"> Как часто вы заходите на сайт?</span>
+                            <select class="survey_select"> 
+                                <option value="almost every day">Почти каждый день </option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="survey_group">
+                        <label class="checkbox_group_label">
+                            <span class="survey_name">Вы подписаны на e-mail рассылку?</span>
+                            <div class="radio_groups">
+                                <div class="radio_group">
+                                    <input type="radio" name="radio_group" class="radio" checked>
+                                    <span class="radio_group_text">Да</span>
+                                </div>
+                                <div class="radio_group">
+                                    <input type="radio" class="radio" name="radio_group" checked> 
+                                    <span class="radio_group_text">Нет</span>
+                                </div>
+                            </div>  
+                        </label>
+                    </div>
+                    <div class="survey_group">
+                        <label class="survey_group_label">
+                            <span class="survey_name">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                            <textarea class="field_textarea" placeholder="Может, больше рецептов?" required></textarea>
+                        </label>
+                    </div>
+                    <div class="survey_group">
+                        <button class="submit" type="submit">Отправить</button>
+                    </div>
+
+                </form>
+                <button class="popup_close" type="button"> </button>
+            </div>
+
+        </div>  
+    </div>
 
 </body>
 </html>
