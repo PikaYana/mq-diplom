@@ -53,7 +53,8 @@ a {
 }
 
 .top_panel {
-  max-width: 1200px;
+  min-width: 1200px;
+
 }
 
 .top_panel__container {
@@ -316,12 +317,13 @@ h1 {
 
 .body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  box-sizing: border-box;
 }
 .posts {
   width: 894px;
@@ -336,14 +338,14 @@ h1 {
 }
 
 .post_picture {
-  width: 380px;
-  height: 100%;
-  background-color: #e5e5e5;
-  background-size: 380px 294px;
+ min-width: 380px;
+  min-height: 294px;
 }
+
 .post_img {
   min-width: 380px;
-  min-height: 294px;
+  height: 100%;
+  width: 96%;
 }
 
 .post_info {
@@ -720,6 +722,8 @@ h3 {
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 64px;
+  box-sizing: border-box;
+
 }
 
 .shop_name {
@@ -1253,6 +1257,7 @@ margin-bottom: 0;
   }
 
   .body {
+    box-sizing: border-box;
     margin-top: 50px;
     max-width: 1199px;
     min-width: 641px;
@@ -1260,6 +1265,7 @@ margin-bottom: 0;
     padding-right: 5%;
     padding-left: 5%;
     justify-content: space-between;
+
   }
 
   .posts {
@@ -1559,12 +1565,14 @@ margin-bottom: 0;
   .post_picture {
     width: 100%;
     max-width: 330px;
+    width: 100%;
 
   }
 
   .post_img {
     min-width: 330px;
     height: 253px;
+    width: 100%;
   }
 
   .post_info {
