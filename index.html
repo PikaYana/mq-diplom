@@ -473,19 +473,19 @@
                         </label>
                     </div>
                     <div class="survey_group">
-                        <label class="checkbox_group_label">
+                        <div class="checkbox_group_label">
                             <span class="survey_name">Вы подписаны на e-mail рассылку?</span>
                             <div class="radio_groups">
                                 <div class="radio_group">
-                                    <input type="radio" name="radio_group" class="radio" checked>
-                                    <span class="radio_group_text">Да</span>
+                                    <input type="radio" name="radio_group" class="radio" id="radio1">
+                                    <label for="radio1" class="radio_group_text">Да</label>
                                 </div>
                                 <div class="radio_group">
-                                    <input type="radio" class="radio" name="radio_group" checked> 
-                                    <span class="radio_group_text">Нет</span>
+                                    <input type="radio" class="radio" name="radio_group" id="radio2"> 
+                                    <label for="radio2" class="radio_group_text">Нет</label>
                                 </div>
                             </div>  
-                        </label>
+                        </div>
                     </div>
                     <div class="survey_group">
                         <label class="survey_group_label">
@@ -496,13 +496,10 @@
                     <div class="survey_group">
                         <button class="submit" type="submit">Отправить</button>
                     </div>
-
                 </form>
                 <button class="popup_close" type="button"> </button>
             </div>
-
         </div>  
     </div>
-
 </body>
 </html>
