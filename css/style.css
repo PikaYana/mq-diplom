@@ -1,6 +1,6 @@
 html {
   font-size: 82.25%;
-}
+ }
 
 * {
   margin: 0;
@@ -37,7 +37,7 @@ a {
   background-size: cover;
   margin-bottom: 64px;
   text-transform: uppercase;
-  min-width: 1200px;
+  max-width: 1200px;
   position: relative;
 }
 
@@ -53,7 +53,7 @@ a {
 }
 
 .top_panel {
-  min-width: 1200px;
+  max-width: 1200px;
 
 }
 
@@ -179,6 +179,9 @@ h1 {
 
 /* блок в тренде */
 
+.trend {
+  max-width: 1200px;
+}
 
 .aside_name {
   font-size: 1.54rem;
@@ -318,23 +321,20 @@ h1 {
 .body {
   display: flex;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
   max-width: 1200px;
   box-sizing: border-box;
 }
 .posts {
-  width: 894px;
+  width: 74.5%;
 }
 
 .post {
   display: flex;
   margin-bottom: 58px;
-  padding-right: 100px;
+  padding-right: 20px;
   box-sizing: border-box;
-  max-width: 74.86%;
 }
 
 .post_picture {
@@ -344,12 +344,11 @@ h1 {
 
 .post_img {
   min-width: 380px;
-
   width: 96%;
 }
 
 .post_info {
-  margin-left: 30px;
+  margin-left: 20px;
   width: 70%;
 }
 
@@ -436,7 +435,7 @@ p {
 }
 
 .aside {
-   width: 272px;
+   width: 25.5%;
 }
 
 .aside_news {
@@ -717,12 +716,10 @@ h3 {
 
 .shop {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 64px;
   box-sizing: border-box;
+  padding-left: 83px;
+  padding-right: 83px;
 
 }
 
@@ -877,11 +874,10 @@ h3 {
 /*футер*/
 
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
   max-width: 1200px;
-    margin-left: auto;
-  margin-right: auto;
+ padding-left: 55px;
+ padding-right: 55px;
+  box-sizing: border-box;
 }
 .container_icons {
   margin-left: auto;
@@ -951,7 +947,7 @@ h3 {
   left: 0;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   justify-content: center;
   align-items: center;
@@ -966,7 +962,7 @@ h3 {
 
 
 .popup_header {
-margin-top: 50px;
+margin-top: 45px;
 }
 
 .popup_header_name {
@@ -993,7 +989,7 @@ margin-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 .survey_group {
   display: block;
@@ -1086,8 +1082,9 @@ textarea {
   background-color: #f4f7f6;
   border: none;
   width: 100%;
-  min-height: 130px;
+  min-height: 120px;
   padding-left: 19px;
+  padding-right: 5px;
   padding-top: 7px;
   font-size: 1rem;
   color: #707171;
@@ -1099,6 +1096,8 @@ textarea {
   margin-top: 10px;
   margin-bottom: 15px;
   max-width: 333px;
+  resize: none;
+
 
 }
 
@@ -1159,9 +1158,9 @@ textarea:hover {
 }
 
 
-.popup {
+//*.popup {
 display: none;
-}
+}*//
 
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -1391,12 +1390,12 @@ margin-bottom: 0;
   }
  
    .popup {
-    min-width: 641px;
+    min-width: 640px;
     max-width: 1199px;
   }
 
   .popup_container {
-    width: 40%;
+    width: 60%;
   }
   .popup_close {
     font-size: 1.53rem;
@@ -1791,6 +1790,11 @@ label {
 
   .popup_close {
     font-size: 1.79rem;
+  }
+
+  textarea {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
