@@ -53,6 +53,8 @@ a {
 
 .top_panel {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -318,8 +320,12 @@ h1 {
   justify-content: space-between;
   padding-left: 55px;
   padding-right: 55px;
+  max-width: 1200px;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .posts {
   width: 74.5%;
 }
@@ -333,7 +339,7 @@ h1 {
 
 .post_picture {
  min-width: 380px;
-  min-height: 294px;
+ min-height: 294px;
 }
 
 .post_img {
@@ -714,6 +720,7 @@ h3 {
   box-sizing: border-box;
   padding-left: 55px;
   padding-right: 55px;
+  justify-content: space-between;
 
 }
 
@@ -868,8 +875,7 @@ h3 {
 /*футер*/
 
 .footer {
- padding-left: 55px;
- padding-right: 55px;
+
   box-sizing: border-box;
 }
 .container_icons {
@@ -880,6 +886,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 68px;
+  max-width: 1200px;
 }
 
 .social_icons {
@@ -1176,6 +1183,7 @@ display: none;
 .top_panel {
   min-width: 641px;
   max-width: 1199px; 
+
 }
 
 .top_panel__container {
@@ -1268,6 +1276,7 @@ margin-bottom: 0;
     padding-right: 5%;
     padding-left: 5%;
     justify-content: space-between;
+
 
   }
 
