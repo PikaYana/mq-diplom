@@ -1100,7 +1100,7 @@ textarea {
 }
 
 textarea:hover {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .submit {
