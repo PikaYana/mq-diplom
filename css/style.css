@@ -1099,6 +1099,10 @@ textarea {
   resize: none;
 }
 
+.survey_select:focus {
+   outline: 1px solid #b59f5b;
+}
+
 textarea:focus {
   outline: 1px solid #b59f5b;
 }
